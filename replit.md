@@ -16,6 +16,22 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### Elemental Fruit Ninja (`artifacts/3d-game`)
+- **Type**: react-vite, preview at `/`
+- **Description**: 3D fruit slicing game with elemental special fruits, Zen Stone health UI, and gravity inversion
+- **Features**:
+  - Frost Pear: triggers screen-wide slow-motion shader effect for 3 seconds
+  - Volcanic Plum: causes chain reaction shattering nearby fruits
+  - Gravity Core: inverts gravity so fruits fall from top instead of bottom
+  - Zen Stone health UI: 3 cracking stones with SVG crack lines, game ends when all shattered
+  - Particle burst FX on fruit slice
+  - Score floats, combo multiplier
+  - Starfield background
+- **Stack**: React + Three.js + @react-three/fiber + zustand
+- **Packages**: three, @types/three, @react-three/fiber, @react-three/drei, zustand
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
